@@ -104,6 +104,7 @@ body {
         letter-spacing: 0%;
         text-align: center;
     }
+
 }
 .stripe{
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -159,12 +160,11 @@ body {
         margin-top: 72px;
         margin-bottom: 50px;
         display: flex;
+        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: auto;
         gap:32px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
         position: relative;
     }
     &__star1{
@@ -186,6 +186,7 @@ body {
         z-index: 0;
     }
     &__cart{
+        width: 378px;
         position: relative;
         order: -1;
         align-self: stretch;
@@ -290,6 +291,7 @@ body {
         padding-bottom: 144px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap:32px;
         position: relative;
     }
@@ -307,7 +309,7 @@ body {
     }
     &__star3{
         position: absolute;
-        left: 1130px;
+        right: 29px;
         bottom: 45px;
         z-index: 0;
     }
@@ -367,21 +369,24 @@ body {
         text-align: center;
     }
     &__img{
-        background-color: aqua;
         width: 50%;
-        position: relative;
+        background-color: aqua;
         overflow:hidden;
     }
+    &__img6{
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        object-fit:cover;
+    }
     &__svg{
-        position: absolute;
         top: 50%;
         left: 50%;
         transform:translate(-50%, -50%);
         object-fit:cover;
     }
     &__svg-min{
-        position: absolute;
-        top: 55%;
+        top: 50%;
         left: 50%;
         transform:translate(-50%, -50%);
         object-fit:cover;
