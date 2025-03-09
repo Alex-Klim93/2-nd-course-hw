@@ -18,7 +18,6 @@ while(num <= 5){
     alert("Задание 2 \n" +  num);
     console.log("Задание 2 \n" +  num);
     num++;
-    break;
 }
 
 /*Задание 3*/
@@ -28,27 +27,41 @@ while(numHw3 >= 7 && numHw3 <= 22){
     alert("Задание 3 \n" +  numHw3);
     console.log("Задание 3 \n" +  numHw3);
     numHw3++;
-    break;
 }
 
 /*Задание 4*/
 const obj = {"Коля":'200',"Вася":'300',"Петя": '400'}
 for (let name in obj){
-    alert('Задание 4 \n ${name}: ${obj[name]}');
-    console.log('Задание 4 \n ${name}: ${obj[name]}');
+    alert(`Задание 4 \n ${name}: ${obj[name]}`);
+    console.log(`Задание 4 \n ${name}: ${obj[name]}`);
 }
 
 /*Задание 5*/
-for(n=1000;n > 50; n/=2){
-    alert('Задание 5 \n' + n);
-    console.log('Задание 5 \n' + n);
-    break;
+let itNum = 0;
+for(n=1000; n > 50; n/=2){
+  itNum++;
+  if(n/2 < 50){
+    alert('Задание 5 \n Количество итерайций ' + itNum + ', Результат деления' + n);
+    console.log('Задание 5 \n Количество итерайций ' + itNum + ', Результат деления' + n);
+}
 }
 
 /*Задание 6*/
 let weekNum = 1;
 
-for(dayNum = 1; dayNum <32&& dayNum>0; dayNum +=7){
-        alert('Задание 6 \n Сегодня пятница,' + dayNum + '-е число. Необходимо подготовить отчет.');
-        console.log('Задание 6 \n Сегодня пятница,' + dayNum + '-е число. Необходимо подготовить отчет.');
+for(dayNum = 1; dayNum>0; dayNum++ && weekNum++){
+    if(dayNum > 31){
+        dayNum = 0;
+        if(weekNum == 7){
+            weekNum = 0;
+            alert('Задание 6 \n Сегодня пятница,' + dayNum + '-е число. Необходимо подготовить отчет.');
+            console.log('Задание 6 \n Сегодня пятница,' + dayNum + '-е число. Необходимо подготовить отчет.');
+        }
+    }else{
+        if(weekNum == 7){
+            weekNum = 0;
+            alert('Задание 6 \n Сегодня пятница,' + dayNum + '-е число. Необходимо подготовить отчет.');
+            console.log('Задание 6 \n Сегодня пятница,' + dayNum + '-е число. Необходимо подготовить отчет.');
+        }
+    }
 }
