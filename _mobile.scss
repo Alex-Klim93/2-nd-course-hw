@@ -7,6 +7,9 @@
         display: none;
     }
     .header{
+        background-image: url("img/Vector.png");
+        background-repeat: no-repeat;
+        background-position: right -86.81px top -81.61px;
         &__box{
         align-items: center;
         }
@@ -28,20 +31,58 @@
             letter-spacing: 0px;
             text-align: center;
         }
-        &__buttom{
-            margin-top: 36px;
-            margin-bottom: 131px;
+        &__button{
+            /* Frame 2043683035 */
+            position: static;
+            width: 285px;
+            height: 55px;
+            /* Auto layout */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10;
+            padding: 16px 28px 16px 28px;
+            /* Inside Auto Layout */
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 36px 0px;
             box-sizing: border-box;
             border: 1px solid rgb(32, 32, 39);
             border-radius: 60px;
             background: rgb(32, 32, 39);
-            color: rgb(255, 255, 255);
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 141.69%;
-            letter-spacing: 0%;
-            text-align: center;
-
+        }
+        &__star1{
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            left: 91px;
+            top: 64px;
+        }
+        &__star2{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: 37px;
+            top: 97px;
+        }
+        &__star3{
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            right: 86px;
+            top: 557px;
+        }
+        &__star4{
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            right: 34px;
+            top: 580px;
+        }
+        &__star5{
+            display: none;
         }
     }
     .stripe{
@@ -85,7 +126,6 @@
             padding-bottom: 49px;
         }
         &__cart{
-            height: 568px;
             display: flex;
             flex-direction: column-reverse;
             justify-content: space-between;
@@ -126,27 +166,14 @@
             letter-spacing: 0%;
             text-align: center;
         }
-        &__img{
-            width: 100%;
-            z-index: 1;
-        }
-        &__svg{
-            position: relative;
-            width: 195%;
-            height: 195%;
-            transform:translate(-50%, -50%);
-        }
-        &__svg-min{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transform:translate(-50%, -250%);  
-        }
         &__hand{
             position: relative;
             width: 30%;
             height: 40%;
             transform:translate(-50%, -800%); 
+        }
+        &__img {
+            width: 100%;
         }
     }
 

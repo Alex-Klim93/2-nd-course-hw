@@ -10,6 +10,7 @@ a {
 
 body {
     font-family: "Montserrat", serif;
+    
 }
 
 .center {
@@ -43,29 +44,30 @@ body {
         position: absolute;
         width: 57px;
         height: 57px;
-        left: -63px;
+        left: -56px;
         top: 94px;
     }
     &__star3{
         position: absolute;
         width: 37px;
         height: 37px;
-        left: 828px;
+        right: 335px;
         top: 538px;
     }
     &__star4{
         position: absolute;
         width: 83px;
         height: 83px;
-        left: 893px;
+        right: 224px;
         top: 568px;
     }
     &__star5{
         position: absolute;
         width: 1074px;
         height: 1130.46px;
-        left: 734px;
+        right: -608px;
         top: -333.46px;
+        opacity: 1;
     }
     &__title{
         margin-top: 196px;
@@ -75,6 +77,8 @@ body {
         line-height: 78px;
         letter-spacing: 0px;
         text-align: left;
+        overflow:hidden;
+        opacity: 2;
     }
     &__text{
         margin-top: 24px;
@@ -277,6 +281,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    overflow: hidden;
     &__title{
         margin-top: 46px;
         margin-bottom: 72px;
@@ -320,7 +325,6 @@ body {
         z-index: 0;
     }
     &__cart{
-        height: 500px;
         background-color: white;
         display: flex;
         flex-direction: row;
@@ -370,31 +374,16 @@ body {
     }
     &__img{
         width: 50%;
-        background-color: aqua;
-        overflow:hidden;
-    }
-    &__img6{
-        top: 50%;
-        left: 50%;
-        transform:translate(-50%, -50%);
-        object-fit:cover;
-    }
-    &__svg{
-        top: 50%;
-        left: 50%;
-        transform:translate(-50%, -50%);
-        object-fit:cover;
-    }
-    &__svg-min{
-        top: 50%;
-        left: 50%;
-        transform:translate(-50%, -50%);
-        object-fit:cover;
+        border-radius: 30px;
     }
     &__hand{
         top: 50%;
         width: 148px;
         height: 161px;
+    }
+    &__imgCart{
+        width: 100%;
+        height: 100%;
     }
 }
 .footer{
