@@ -1,0 +1,197 @@
+@media (max-width:767px){
+    .center{
+        padding-left: calc(16px);
+        padding-right: calc(16px);
+    }
+    .star{
+        display: none;
+    }
+    .header{
+        height: 700px - 52px;
+        background-image: url("img/Vector.png");
+        background-repeat: no-repeat;
+        background-position: right -86.81px top -81.61px;
+        &__box{
+        padding-right: 0px;
+        align-items: center;
+        }
+        &__title{
+            margin-top: 147px;
+            color: rgb(32, 32, 39);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+        &__text{
+            margin-top: 24px;
+            color: rgb(32, 32, 39);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+        &__button{
+            width: 285px;
+            height: 55px;
+
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+        &__button-a{
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+        &__star1{
+            position: absolute;
+            width: 21px;
+            height: 21px;
+            left: 91px;
+            top: 64px;
+        }
+        &__star2{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: 37px;
+            top: 97px;
+        }
+        &__star3{
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            right: 86px;
+            top: 557px;
+        }
+        &__star4{
+            position: absolute;
+            width: 39px;
+            height: 39px;
+            right: 34px;
+            top: 580px;
+        }
+        &__star5{
+            display: none;
+        }
+    }
+    .stripe{
+        height: 52px;
+        padding: 16px 24px 16px 24px;
+        &__box{
+            gap:27px;
+        }
+        &__h3{
+            color: rgb(32, 32, 39);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 4%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        &__svg{
+            width: 19px;
+            height: 19px;
+        }
+    }
+    .info-game{
+        display: none;
+
+    }
+    .mini-game{
+        &__title{
+            margin-top: 48px;
+            margin-bottom: 48px;
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: left;
+            
+        }
+        &__box{
+            gap:24px;
+            padding-bottom: 49px;
+        }
+        &__cart{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            z-index: 0;
+        }
+        &__part{
+            padding: 29px 29px 32px 29px;
+        }
+        &__h1{
+            color: rgb(32, 32, 39);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        &__p{
+            margin-top: 16px;
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        &__button{
+            width: 285px;
+            height: 55px;
+            margin-top: 32px;
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+        &__hand{
+            position: relative;
+            width: 30%;
+            height: 40%;
+            transform:translate(-50%, -800%); 
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .footer{
+        height: 100px;
+    }
+    
+}
+@media(min-width:410px) and (max-width:767px){
+    
+}
+@media(min-width:768px){
+
+}
