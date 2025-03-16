@@ -29,6 +29,7 @@ body {
     background: rgb(225, 255, 143);
     overflow:hidden;
     &__box{
+        padding-right: 432px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -98,6 +99,7 @@ body {
         margin-top: 48px;
         border-radius: 60px;
         background: rgb(32, 32, 39);
+        
     }
     &__button-a{
         color: rgb(255, 255, 255);
@@ -248,7 +250,7 @@ body {
         padding: 32px 32px 32px 32px;
     }
     &__cart-number{
-        width: 108px;
+        width: 82px;
         padding: 8px 16px 10px 16px;
         border-radius: 52.58px;
         background: rgb(247, 247, 247);

@@ -1,8 +1,8 @@
 /*Игра первая.
 Угадай случайное число от 1 до 100.*/
 
-function numRandom (mysterious){
-    mysterious = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
+function numRandom (){
+    let mysterious = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
     //alert(mysterious);
     let guess = prompt('Попробуй угадай число от 1 до 100 \n Введи чесло: ' );
       while(guess != mysterious) {
@@ -25,46 +25,46 @@ function numRandom (mysterious){
 Простая арифметика*/
 
 function arithmetic (a,b){
-    a = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
-    b = Math.floor(Math.random() * (100 - 0 + 1)) + 0;
-    let task = [sum = a+b,minus = a-b,multiply = a*b,divide = a/b]
-    let i = Math.floor(Math.random() * (3 - 0 + 1)) + 0;
+    a = Math.floor(Math.random() * (100 - 0+ 1))+0;
+    b = Math.floor(Math.random() * (100 - 0+ 1))+0;
+    let task = [a+b,a-b,a*b,a/b]
+    let i = Math.floor(Math.random() * (3 - 0+ 1))+0;
 
-    if(task[i] == sum){
+    if(task[i] == task[0]){
         let answer = prompt('Чему равно сложение: '+ a+'+'+b);
         if(answer == task[i]){
-            alert('Верно!!! \n Ответ: ' + task[i]);
-            console.log('Верно!!! \n Ответ: ' + task[i]);
+            alert('Верно!!! \n Ответ: ' + task[i].toFixed(2));
+            console.log('Верно!!! \n Ответ: ' + task[i].toFixed(2));
         }else{
-            alert('Не верно!!! \n Правильный ответ: ' + task[i]);
-            console.log('Не верно!!! \n Правельный ответ: ' + task[i]);
+            alert('Не верно!!! \n Правильный ответ: ' + task[i].toFixed(2));
+            console.log('Не верно!!! \n Правельный ответ: ' + task[i].toFixed(2));
         }
-    }else if(task[i] == minus){
+    }else if(task[i] == task[1]){
         let answer = prompt('Чему равно вычитание: '+ a+'-'+b);
         if(answer == task[i]){
-            alert('Верно!!! \n Ответ: ' + task[i]);
-            console.log('Верно!!! \n Ответ: ' + task[i]);
+            alert('Верно!!! \n Ответ: ' + task[i].toFixed(2));
+            console.log('Верно!!! \n Ответ: ' + task[i].toFixed(2));
         }else{
-            alert('Не верно!!! \n Правильный ответ: ' + task[i]);
-            console.log('Не верно!!! \n Правельный ответ: ' + task[i]);
+            alert('Не верно!!! \n Правильный ответ: ' + task[i].toFixed(2));
+            console.log('Не верно!!! \n Правельный ответ: ' + task[i].toFixed(2));
         }
-    }else if(task[i] == multiply){
+    }else if(task[i] == task[2]){
         let answer = prompt('Чему равно умножение: '+ a+'*'+b);
         if(answer == task[i]){
-            alert('Верно!!! \n Ответ: ' + task[i]);
-            console.log('Верно!!! \n Ответ: ' + task[i]);
+            alert('Верно!!! \n Ответ: ' + task[i].toFixed(2));
+            console.log('Верно!!! \n Ответ: ' + task[i].toFixed(2));
         }else{
-            alert('Не верно!!! \n Правильный ответ: ' + task[i]);
-            console.log('Не верно!!! \n Правельный ответ: ' + task[i]);
+            alert('Не верно!!! \n Правильный ответ: ' + task[i].toFixed(2));
+            console.log('Не верно!!! \n Правельный ответ: ' + task[i].toFixed(2));
         }
-    }else if(task[i] == divide){
+    }else if(task[i] == task[3]){
         let answer = prompt('Чему равно деление: '+ a+'/'+b);
         if(answer == task[i]){
-            alert('Верно!!! \n Ответ: ' + task[i]);
-            console.log('Верно!!! \n Ответ: ' + task[i]);
+            alert('Верно!!! \n Ответ: ' + task[i].toFixed(2));
+            console.log('Верно!!! \n Ответ: ' + task[i].toFixed(2));
         }else{
-            alert('Не верно!!! \n Правильный ответ: ' + task[i]);
-            console.log('Не верно!!! \n Правельный ответ: ' + task[i]);
+            alert('Не верно!!! \n Правильный ответ: ' + task[i].toFixed(2));
+            console.log('Не верно!!! \n Правельный ответ: ' + task[i].toFixed(2));
         }
     } 
 }
@@ -116,3 +116,30 @@ function reverseText (text){
         console.log('Количество векрных ответов: '+ correctAnswers+'\n Верный ответ на первый вопрос: '+quiz[0].options[1]+'\n Верный ответ на второй вопрос: '+quiz[1].options[1]+'\n Верный ответ на третий вопрос: '+quiz[2].options[1]);
     }
 
+    /*Игра пятая.
+«Камень, ножницы, бумага»*/
+
+function RockPaperScissors (choice){
+    choice = prompt("Игра «Камень, ножницы, бумага» \n Победите компьютор в игру)), ваш выбор: ");
+    const Pc = ['Камень', 'ножницы', 'бумага'];
+    const newPc = Pc.map((str) => str.toLowerCase());
+    const randomPc = Math.floor(Math.random() * (2 - 0 + 1)) + 0;
+    const result = newPc[randomPc]; 
+            while(!newPc.includes(choice.toLowerCase())){
+                choice = prompt("Игра «Камень, ножницы, бумага» \n Нестесняйся выбери одну из фигур, ваш выбор: " + choice);
+            }
+            
+            alert(Pc.indexOf(choice) +" "+ newPc.indexOf(result));
+
+            if(Pc.indexOf(choice) === newPc.indexOf(result)){
+                alert('Нечья: '+choice+' '+result);
+            }else if((Pc.indexOf(choice) === -1 && newPc.indexOf(result)===1)||(Pc.indexOf(choice) === 0 && newPc.indexOf(result)===1)){
+                alert('Победа: '+choice+' '+result);
+            }else if(Pc.indexOf(choice) === 1 && newPc.indexOf(result)===2){
+                alert('Победа: '+choice+' '+result);
+            }else if((Pc.indexOf(choice) === 2 && newPc.indexOf(result)===-1)||(Pc.indexOf(choice) === 2 && newPc.indexOf(result)===0)){
+                alert('Победа: '+choice+' '+result);
+            }else{
+                alert('Поражение: '+choice+' '+result);
+            }
+}

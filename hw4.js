@@ -77,27 +77,27 @@ function numCube(a2){
 
 alert('Задание 6 \n' + numCube(a2));
 
-/*Задание 7*/
-const circle2 = {
-    radius: 2,
-    bark: function(getArea, getPerimeter) {
-        getArea = `${this.radius}`*`${this.radius}`*3.14;
-        getPerimeter = `${this.radius}`*2*3.14;
-    alert('Задание 7 \n' + 'circle2 \n' + 'Площадь круга ' + getArea + '\n Длина окружности '  + getPerimeter + '\n');
-   }
- }
+/*Задание 7
+Создайте два объекта, circle1 и circle2, каждый из которых имеет свойство radius.
+Оба объекта должны иметь:
+Метод getArea, который возвращает площадь круга, вычисляемую через радиус.Метод getPerimeter, который возвращает периметр окружности.*/
+function Circle(radius) {
+    this.radius = radius;
+    this.getArea = function() {
+        return Math.PI * this.radius * this.radius;
+    };
+    this.getPerimeter = function() {
+        return 2 * Math.PI * this.radius;
+    };
+}
+const circle1 = new Circle(5);
+const circle2 = new Circle(10);
 
- const circle1 = {
-    radius: 2,
-    bark: function(getArea, getPerimeter) {
-        getArea = `${this.radius}`*`${this.radius}`*3.14;
-        getPerimeter = `${this.radius}`*2*3.14;
-    alert('Задание 7 \n' + 'circle1 \n' + 'Площадь круга ' + getArea + '\n Длина окружности '  + getPerimeter + '\n');
-   }
- }
+alert(`Площадь круга 1: ${circle1.getArea()}`+'\n'+`Периметр круга 1: ${circle1.getPerimeter()}`+'\n'+`Площадь круга 2: ${circle2.getArea()}`+'\n'+`Периметр круга 2: ${circle2.getPerimeter()}`);
+console.log(`Площадь круга 1: ${circle1.getArea()}`);
+console.log(`Периметр круга 1: ${circle1.getPerimeter()}`);
 
- circle2.radius = prompt('Задание 7 \n Введите радиус окружности circle2');
- circle1.radius = prompt('Задание 7 \n Введите радиус окружности circle1');
- circle2.bark();
- circle1.bark();
+console.log(`Площадь круга 2: ${circle2.getArea()}`);
+console.log(`Периметр круга 2: ${circle2.getPerimeter()}`);
+
 

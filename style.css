@@ -1,3 +1,4 @@
+@charset "UTF-8";
 button:hover {
   cursor: pointer;
   background-color: white;
@@ -18,6 +19,11 @@ button:hover .header__button-a {
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
+}
+
+.info-game__cart:hover {
+  transform: scale(1.1); /* Увеличение объекта на 20% */
+  z-index: 9;
 }
 
 * {
@@ -51,6 +57,7 @@ body {
   overflow: hidden;
 }
 .header__box {
+  padding-right: 432px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -274,7 +281,7 @@ body {
   padding: 32px 32px 32px 32px;
 }
 .info-game__cart-number {
-  width: 108px;
+  width: 82px;
   padding: 8px 16px 10px 16px;
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
@@ -453,11 +460,13 @@ body {
     display: none;
   }
   .header {
+    height: 648px;
     background-image: url("img/Vector.png");
     background-repeat: no-repeat;
     background-position: right -86.81px top -81.61px;
   }
   .header__box {
+    padding-right: 0px;
     align-items: center;
   }
   .header__title {
@@ -479,26 +488,28 @@ body {
     text-align: center;
   }
   .header__button {
-    /* Frame 2043683035 */
-    position: static;
     width: 285px;
     height: 55px;
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10;
-    padding: 16px 28px 16px 28px;
-    /* Inside Auto Layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 36px 0px;
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
     background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .header__button-a {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .header__star1 {
     position: absolute;
@@ -566,6 +577,7 @@ body {
     text-align: left;
   }
   .mini-game__box {
+    gap: 24px;
     padding-bottom: 49px;
   }
   .mini-game__cart {
