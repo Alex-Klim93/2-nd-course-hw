@@ -128,10 +128,8 @@ function RockPaperScissors (choice){
             while(!newPc.includes(choice.toLowerCase())){
                 choice = prompt("Игра «Камень, ножницы, бумага» \n Нестесняйся выбери одну из фигур, ваш выбор: " + choice);
             }
-            
-            alert(Pc.indexOf(choice) +" "+ newPc.indexOf(result));
 
-            if(Pc.indexOf(choice) === newPc.indexOf(result)){
+            if(Pc.indexOf(choice) === newPc.indexOf(result)||(Pc.indexOf(choice) === -1 && newPc.indexOf(result)===0)){
                 alert('Нечья: '+choice+' '+result);
             }else if((Pc.indexOf(choice) === -1 && newPc.indexOf(result)===1)||(Pc.indexOf(choice) === 0 && newPc.indexOf(result)===1)){
                 alert('Победа: '+choice+' '+result);
