@@ -19,6 +19,9 @@ button:hover {
         text-align: center;
     }
 }
+.info-game__cart{
+    transition: transform 0.5s ease;
+}
 .info-game__cart:hover{
     transform: scale(1.10); /* Увеличение объекта на 20% */
     z-index: 9;

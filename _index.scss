@@ -10,7 +10,7 @@ a {
 
 body {
     font-family: "Montserrat", serif;
-    
+    transition: background-color 0.5s;
 }
 
 .center {
@@ -33,6 +33,8 @@ body {
         position: relative;
         display: flex;
         flex-direction: column;
+        overflow: visible;
+        z-index: 2;
     }
     &__star1{
         position: absolute;
@@ -40,6 +42,7 @@ body {
         height: 35px;
         left: 36px;
         top: 69px;
+        z-index: 1;
     }
     &__star2{
         position: absolute;
@@ -47,6 +50,7 @@ body {
         height: 57px;
         left: -56px;
         top: 94px;
+        z-index: 1;
     }
     &__star3{
         position: absolute;
@@ -54,6 +58,7 @@ body {
         height: 37px;
         right: 335px;
         top: 538px;
+        z-index: 1;
     }
     &__star4{
         position: absolute;
@@ -61,6 +66,7 @@ body {
         height: 83px;
         right: 224px;
         top: 568px;
+        z-index: 1;
     }
     &__star5{
         position: absolute;
@@ -69,6 +75,7 @@ body {
         right: -608px;
         top: -333.46px;
         opacity: 1;
+        z-index: 1;
     }
     &__title{
         margin-top: 196px;
@@ -80,6 +87,7 @@ body {
         text-align: left;
         overflow:hidden;
         opacity: 2;
+        z-index: 2;
     }
     &__text{
         margin-top: 24px;
@@ -276,7 +284,8 @@ body {
     
 }
 .mini-game{
-    background: rgb(32, 32, 39);
+    /*background: rgb(32, 32, 39);*/
+    background-color:rgb(32, 32, 39);
     background-position: center;
     background-position: no-repeat;
     background-size: cover;

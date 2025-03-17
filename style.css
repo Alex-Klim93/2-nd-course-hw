@@ -21,6 +21,10 @@ button:hover .header__button-a {
   text-align: center;
 }
 
+.info-game__cart {
+  transition: transform 0.5s ease;
+}
+
 .info-game__cart:hover {
   transform: scale(1.1); /* Увеличение объекта на 20% */
   z-index: 9;
@@ -37,6 +41,7 @@ a {
 
 body {
   font-family: "Montserrat", serif;
+  transition: background-color 0.5s;
 }
 
 .center {
@@ -61,6 +66,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: visible;
+  z-index: 2;
 }
 .header__star1 {
   position: absolute;
@@ -68,6 +75,7 @@ body {
   height: 35px;
   left: 36px;
   top: 69px;
+  z-index: 1;
 }
 .header__star2 {
   position: absolute;
@@ -75,6 +83,7 @@ body {
   height: 57px;
   left: -56px;
   top: 94px;
+  z-index: 1;
 }
 .header__star3 {
   position: absolute;
@@ -82,6 +91,7 @@ body {
   height: 37px;
   right: 335px;
   top: 538px;
+  z-index: 1;
 }
 .header__star4 {
   position: absolute;
@@ -89,6 +99,7 @@ body {
   height: 83px;
   right: 224px;
   top: 568px;
+  z-index: 1;
 }
 .header__star5 {
   position: absolute;
@@ -97,6 +108,7 @@ body {
   right: -608px;
   top: -333.46px;
   opacity: 1;
+  z-index: 1;
 }
 .header__title {
   margin-top: 196px;
@@ -108,6 +120,7 @@ body {
   text-align: left;
   overflow: hidden;
   opacity: 2;
+  z-index: 2;
 }
 .header__text {
   margin-top: 24px;
@@ -306,7 +319,8 @@ body {
 }
 
 .mini-game {
-  background: rgb(32, 32, 39);
+  /*background: rgb(32, 32, 39);*/
+  background-color: rgb(32, 32, 39);
   background-position: center;
   background-position: no-repeat;
   background-size: cover;
@@ -438,17 +452,23 @@ body {
 
 @media (max-width: 1024px) {
   .center {
-    padding-left: calc(48% - 393px);
-    padding-right: calc(48% - 393px);
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
   }
-  .center info-game__cart {
-    width: 343px;
+  .header__box {
+    padding-right: 0px;
   }
-}
-@media (min-width: 768px) and (max-width: 833px) {
-  .center {
-    padding-left: 26px;
-    padding-right: 26px;
+  .info-game__content {
+    gap: 20px;
+  }
+  .info-game__cart {
+    height: 550px;
+  }
+  .info-game__cart-big {
+    margin-bottom: 0px;
+  }
+  .info-game__cart-little {
+    margin-top: 0px;
   }
 }
 @media (max-width: 767px) {
