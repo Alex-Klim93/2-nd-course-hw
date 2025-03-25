@@ -143,3 +143,17 @@ function RockPaperScissors (choice){
                 alert('Поражение: '+choice+' '+result);
             }
 }
+
+    /*Игра шестая.
+«Генератор случайных цветов»*/
+        const button = document.getElementById('colorButton');
+        const miniGameDiv = document.querySelector('.mini-game');
+        const originalColor = miniGameDiv.style.backgroundColor;
+
+        button.addEventListener('click', () => {
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            miniGameDiv.style.backgroundColor = randomColor;
+            setTimeout(() => {
+                miniGameDiv.style.backgroundColor = originalColor;
+            }, 5000);
+        });
