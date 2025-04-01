@@ -128,8 +128,6 @@ function RockPaperScissors (choice){
             while(!newPc.includes(choice.toLowerCase())){
                 choice = prompt("Игра «Камень, ножницы, бумага» \n Нестесняйся выбери одну из фигур, ваш выбор: " + choice);
             }
-            
-            alert(Pc.indexOf(choice) +" "+ newPc.indexOf(result));
 
             if(Pc.indexOf(choice) === newPc.indexOf(result)){
                 alert('Нечья: '+choice+' '+result);

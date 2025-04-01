@@ -7,7 +7,9 @@
 a {
     text-decoration: none;
 }
-
+html{
+    scroll-behavior: smooth; /* Плавный скролл */
+}
 body {
     font-family: "Montserrat", serif;
     transition: background-color 0.5s;
@@ -98,7 +100,7 @@ body {
         letter-spacing: 0px;
         text-align: left;
     }
-    &__text-bold{
+    &__text_bold{
         font-weight: 600;
     }
     &__button{
@@ -109,7 +111,7 @@ body {
         background: rgb(32, 32, 39);
         
     }
-    &__button-a{
+    &__button_linkBut{
         color: rgb(255, 255, 255);
         font-family: Montserrat;
         font-size: 24px;
@@ -132,7 +134,7 @@ body {
         display: flex;
         gap: 51px;
     }
-    &__h3{
+    &__name{
         white-space: nowrap;
         color: rgb(32, 32, 39);
         font-size: 30px;
@@ -161,7 +163,7 @@ body {
         letter-spacing: 0px;
         text-align: left;
     }
-    &__p{
+    &__text{
         margin-top: 24px;
         color: rgb(255, 255, 255);
         font-size: 24px;
@@ -211,13 +213,13 @@ body {
         grid-column: span 4;
         z-index: 1;
     }
-    &__cart-big{
+    &__cart_big{
         margin-bottom: -32px;
     }
-    &__cart-little{
+    &__cart_little{
         margin-top: 32px;
     }
-    &__cart-img{
+    &__cart_img{
         border-radius: 30px;
         background-color: aqua;
         width: inherit;
@@ -225,7 +227,7 @@ body {
         position: relative;
         overflow:hidden;
     }
-    &__cart-svg{
+    &__cart_svg{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -251,13 +253,13 @@ body {
         transform:translate(-50%, -50%);
         object-fit:cover;
     }
-    &__cart-description{
+    &__cart_description{
         display: flex;
         flex-direction: column;
         gap:16px;
         padding: 32px 32px 32px 32px;
     }
-    &__cart-number{
+    &__cart_number{
         width: 82px;
         padding: 8px 16px 10px 16px;
         border-radius: 52.58px;
@@ -273,7 +275,7 @@ body {
         justify-content: start;
         align-items: center;
     }
-    &__cart-name{
+    &__cart_name{
         color: rgb(32, 32, 39);
         font-size: 32px;
         font-weight: 700;
@@ -346,14 +348,14 @@ body {
         overflow:hidden;
         z-index: 1;
     }
-    &__cart-revers{
+    &__cart_revers{
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
     &__part{
         padding: 48px 48px 48px 48px;
     }
-    &__h1{
+    &__name{
         color: rgb(32, 32, 39);
         font-size: 48px;
         font-weight: 700;
@@ -361,7 +363,7 @@ body {
         letter-spacing: 0px;
         text-align: left;
     }
-    &__p{
+    &__text{
         margin-top: 24px;
         color: rgb(32, 32, 39);
         font-size: 24px;
@@ -377,11 +379,13 @@ body {
         border-radius: 60px;
         background: rgb(32, 32, 39);
         color: rgb(255, 255, 255);
+        font-family: Montserrat;
         font-size: 24px;
         font-weight: 600;
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
+        transition: transform 0.5s ease, background-color 0.5s ease;
     }
     &__img{
         width: 50%;
@@ -404,7 +408,7 @@ body {
     justify-content: center;
     align-items: center;
     background: rgb(189, 237, 53);;
-    &__p{
+    &__text{
         color: rgb(0, 0, 0);
         font-size: 24px;
         font-weight: 600;

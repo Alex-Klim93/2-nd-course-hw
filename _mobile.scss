@@ -1,7 +1,7 @@
 @media (max-width:767px){
     .center{
-        padding-left: calc(16px);
-        padding-right: calc(16px);
+        padding-left: calc(20px);
+        padding-right: calc(20px);
     }
     .star{
         display: none;
@@ -50,7 +50,7 @@
             letter-spacing: 0%;
             text-align: center;
         }
-        &__button-a{
+        &__button_linkBut{
             color: rgb(255, 255, 255);
             font-family: Montserrat;
             font-size: 16px;
@@ -137,11 +137,13 @@
             flex-direction: column-reverse;
             justify-content: space-between;
             z-index: 0;
+            align-items: center;
         }
         &__part{
             padding: 29px 29px 32px 29px;
+            justify-content: center;
         }
-        &__h1{
+        &__name{
             color: rgb(32, 32, 39);
             font-size: 32px;
             font-weight: 700;
@@ -149,7 +151,7 @@
             letter-spacing: 0px;
             text-align: left;
         }
-        &__p{
+        &__text{
             margin-top: 16px;
             color: rgb(0, 0, 0);
             font-size: 16px;
@@ -192,6 +194,10 @@
 @media(min-width:410px) and (max-width:767px){
     
 }
-@media(min-width:768px){
-
+@media(max-width:426px){
+    .header{
+        &__title{
+            width: 296px;
+        }
+    }
 }

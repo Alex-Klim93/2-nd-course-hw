@@ -12,8 +12,9 @@ button:hover {
   letter-spacing: 0%;
   text-align: center;
 }
-button:hover .header__button-a {
+button:hover .header__button_linkBut {
   color: rgb(0, 0, 0);
+  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
@@ -37,6 +38,10 @@ button:hover .header__button-a {
 
 a {
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth; /* Плавный скролл */
 }
 
 body {
@@ -131,7 +136,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-.header__text-bold {
+.header__text_bold {
   font-weight: 600;
 }
 .header__button {
@@ -141,7 +146,7 @@ body {
   border-radius: 60px;
   background: rgb(32, 32, 39);
 }
-.header__button-a {
+.header__button_linkBut {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 24px;
@@ -165,7 +170,7 @@ body {
   display: flex;
   gap: 51px;
 }
-.stripe__h3 {
+.stripe__name {
   white-space: nowrap;
   color: rgb(32, 32, 39);
   font-size: 30px;
@@ -194,7 +199,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-.info-game__p {
+.info-game__text {
   margin-top: 24px;
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -244,13 +249,13 @@ body {
   grid-column: span 4;
   z-index: 1;
 }
-.info-game__cart-big {
+.info-game__cart_big {
   margin-bottom: -32px;
 }
-.info-game__cart-little {
+.info-game__cart_little {
   margin-top: 32px;
 }
-.info-game__cart-img {
+.info-game__cart_img {
   border-radius: 30px;
   background-color: aqua;
   width: inherit;
@@ -258,7 +263,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.info-game__cart-svg {
+.info-game__cart_svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -287,13 +292,13 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.info-game__cart-description {
+.info-game__cart_description {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 32px 32px 32px 32px;
 }
-.info-game__cart-number {
+.info-game__cart_number {
   width: 82px;
   padding: 8px 16px 10px 16px;
   border-radius: 52.58px;
@@ -309,7 +314,7 @@ body {
   justify-content: start;
   align-items: center;
 }
-.info-game__cart-name {
+.info-game__cart_name {
   color: rgb(32, 32, 39);
   font-size: 32px;
   font-weight: 700;
@@ -382,14 +387,14 @@ body {
   overflow: hidden;
   z-index: 1;
 }
-.mini-game__cart-revers {
+.mini-game__cart_revers {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 .mini-game__part {
   padding: 48px 48px 48px 48px;
 }
-.mini-game__h1 {
+.mini-game__name {
   color: rgb(32, 32, 39);
   font-size: 48px;
   font-weight: 700;
@@ -397,7 +402,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-.mini-game__p {
+.mini-game__text {
   margin-top: 24px;
   color: rgb(32, 32, 39);
   font-size: 24px;
@@ -413,11 +418,13 @@ body {
   border-radius: 60px;
   background: rgb(32, 32, 39);
   color: rgb(255, 255, 255);
+  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
   letter-spacing: 0%;
   text-align: center;
+  transition: transform 0.5s ease, background-color 0.5s ease;
 }
 .mini-game__img {
   width: 50%;
@@ -441,7 +448,7 @@ body {
   align-items: center;
   background: rgb(189, 237, 53);
 }
-.footer__p {
+.footer__text {
   color: rgb(0, 0, 0);
   font-size: 24px;
   font-weight: 600;
@@ -464,17 +471,17 @@ body {
   .info-game__cart {
     height: 550px;
   }
-  .info-game__cart-big {
+  .info-game__cart_big {
     margin-bottom: 0px;
   }
-  .info-game__cart-little {
+  .info-game__cart_little {
     margin-top: 0px;
   }
 }
 @media (max-width: 767px) {
   .center {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .star {
     display: none;
@@ -522,7 +529,7 @@ body {
     letter-spacing: 0%;
     text-align: center;
   }
-  .header__button-a {
+  .header__button_linkBut {
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 16px;
@@ -605,11 +612,13 @@ body {
     flex-direction: column-reverse;
     justify-content: space-between;
     z-index: 0;
+    align-items: center;
   }
   .mini-game__part {
     padding: 29px 29px 32px 29px;
+    justify-content: center;
   }
-  .mini-game__h1 {
+  .mini-game__name {
     color: rgb(32, 32, 39);
     font-size: 32px;
     font-weight: 700;
@@ -617,7 +626,7 @@ body {
     letter-spacing: 0px;
     text-align: left;
   }
-  .mini-game__p {
+  .mini-game__text {
     margin-top: 16px;
     color: rgb(0, 0, 0);
     font-size: 16px;
@@ -652,5 +661,10 @@ body {
   }
   .footer {
     height: 100px;
+  }
+}
+@media (max-width: 426px) {
+  .header__title {
+    width: 296px;
   }
 }/*# sourceMappingURL=style.css.map */
